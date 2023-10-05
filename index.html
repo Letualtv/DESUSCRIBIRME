@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desubscribirme</title>
     <style>
-        /* Estilos para centrar el botón */
         body {
             display: flex;
             justify-content: center;
@@ -14,13 +13,11 @@
             margin: 0;
         }
 
-        /* Estilos para el botón */
         button {
             padding: 10px 20px;
             font-size: 18px;
         }
 
-        /* Estilos para el diálogo */
         #dialogo {
             display: none;
             position: fixed;
@@ -43,7 +40,6 @@
     </style>
 </head>
 <body>
-    <!-- Botón para abrir el diálogo -->
     <h2>Hijo puta, mi gato se ha quedao <p> con tu cara, tus muertos perro.</p></h2>
 
     <!-- Diálogo -->
@@ -56,17 +52,14 @@
     </div>
 
     <script>
-        // Función para abrir el diálogo
         function abrirDialogo() {
             document.getElementById('dialogo').style.display = 'block';
         }
 
-        // Función para cerrar el diálogo
         function cerrarDialogo() {
             document.getElementById('dialogo').style.display = 'none';
         }
 
-        // Agregar un evento de clic al botón para abrir el diálogo
         document.getElementById('boton').addEventListener('click', abrirDialogo);
     </script>
     
