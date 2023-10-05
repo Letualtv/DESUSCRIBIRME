@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desubscribirme</title>
+    <style>
+        /* Estilos para centrar el botón */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Estilos para el botón */
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+        /* Estilos para el diálogo */
+        #dialogo {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #contenido-dialogo {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botón para abrir el diálogo -->
+    <h2>Hijo puta, mi gato se ha quedao <p> con tu cara, tus muertos perro.</p></h2>
+
+    <!-- Diálogo -->
+    <div id="dialogo">
+        <div id="contenido-dialogo">
+            <h2>Aqui te puedes quejar de CubataViernesNoche</h2>
+            <p>¿Seguro que quieres dejar de alimentar al gato?</p>
+            <button onclick="cerrarDialogo()">Desuscribeme, a tomar por culo el gato!!</button>
+        </div>
+    </div>
+
+    <script>
+        // Función para abrir el diálogo
+        function abrirDialogo() {
+            document.getElementById('dialogo').style.display = 'block';
+        }
+
+        // Función para cerrar el diálogo
+        function cerrarDialogo() {
+            document.getElementById('dialogo').style.display = 'none';
+        }
+
+        // Agregar un evento de clic al botón para abrir el diálogo
+        document.getElementById('boton').addEventListener('click', abrirDialogo);
+    </script>
+    
+</body>
+</html>
